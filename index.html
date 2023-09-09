@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English : Pronunciation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-purple-600 via-pink-400 to-purple-900 p-4 text-white">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-semibold">Learn English : Pronunciation</h1>
+        </div>
+    </header>
+
+    <main class="bg-gradient-to-r from-pink-400 via-pink-300 to-purple-300 container mx-auto mt-8 p-6 rounded-lg shadow-lg">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div  class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-black">Word <span class="text-red-800">Search</span></h2>
+                <div class="flex items-center">
+                    <div class="mt-4">
+                        <label for="word" class="block text-red-600">Enter a word:</label>
+                        <input  type="text" id="searchFiled" name="word" class="border rounded-lg w-full py-2 px-3 focus:outline-none focus:ring-2 " placeholder="Search for a word">
+                    </div>
+                    <button onclick="searchData()" type="submit" class="ml-2 mt-10 bg-gradient-to-r from-pink-400  to-purple-700   text-white font-semibold py-2 px-4 rounded-lg transition duration-300  transform  focus:outline-none  ">Search</button>
+                </div>
+                <div id="pronunciation" class="mt-6">
+                    <!-- <strong class="text-xl text-gray-700">Word: [Word Here]</strong>
+                    <strong class="block text-xl  mt-1 text-gray-700">Pronunciation:</strong>
+                    <audio controls class="mt-2">
+                        <source src="pronunciation.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio> -->
+                </div>
+            </div>
+            <div id="wordDetails" class="bg-gray-100 text-gray-500 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-black">Word <span class="text-red-800">Details</span></h2>
+                <div class="mt-4"  >
+                    <p class="mt-2"><strong>Definition:</strong> [Definition Here]</p>
+                    <p class="mt-2"><strong>Part of Speech:</strong> [Part of Speech Here]</p>
+                    <p class="mt-2"><strong>Synonyms:</strong> [Synonyms Here]</p>
+                    <p class="mt-2"><strong>Antonyms:</strong> [Antonyms Here]</p>
+                    <p class="mt-2"><strong>Example:</strong> [Example Here]</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gradient-to-r from-purple-900 via-pink-400 to-pink-900 p-4 mt-20 text-white ">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Dictionary Website</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
